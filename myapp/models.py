@@ -5,6 +5,9 @@ class Author(models.Model):
     birth_date = models.DateField()
     nationality = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.name    
+
 class Genre(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()

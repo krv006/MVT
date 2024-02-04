@@ -9,8 +9,41 @@
 
 <body>
 
-<h1>Hello World</h1>
-svsadbvksnvms;
+
+
+
+
+{% comment %} 1 masala all_books {% endcomment %}
+{% for i in all_books %}
+<h1>  masala.1 == all_books  </h1>
+{{i.title}}
+{% endfor %}
+
+
+{% comment %} 3 masla all_authours {% endcomment %}
+{% for i in all_authours %}
+<h1>  masala.3 == all_authours  </h1>
+{{i.name}}
+{% endfor %}
+
+
+{% comment %} 5 masala all_genre {% endcomment %}
+{% for i in all_genre %}
+<h1>  masala.5 == all_genre  </h1>
+{{i.name}}
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
