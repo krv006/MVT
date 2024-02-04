@@ -20,10 +20,41 @@
 {% endfor %}
 
 
+{% comment %} 2 masala alls {% endcomment %}
+{% for i in alls %}
+<h1>  masala.2 == alls  </h1>
+<h4>  Kitob nomi  </h4>
+{{i.title}}
+<h4>  Avtor:  </h4>
+{{i.authours}}
+<h4>  Janr:  </h4>
+{{i.genre}}
+<h4>  Kim tomonidan ishlab chiqilgan:  </h4>
+{{i.publisher}}
+<h4>  Chiqazilgan kuni:  </h4>
+{{i.publication_date}}
+<h4>  Kitob narxi:  </h4>
+{{i.price}}
+
+{% endfor %}
+
+
 {% comment %} 3 masla all_authours {% endcomment %}
 {% for i in all_authours %}
 <h1>  masala.3 == all_authours  </h1>
 {{i.name}}
+{% endfor %}
+
+
+{% comment %} 4 masala all{% endcomment %}
+{% for i in all %}
+<h1>  masala.4 == all     </h1>
+<h4>  Ismi:  </h4>
+{{i.name}}
+<h4>  Tug'ilgan yili:  </h4>
+{{i.birth_date}}
+<h4>  Millati:  </h4>
+{{i.nationality}}
 {% endfor %}
 
 
@@ -34,6 +65,11 @@
 {% endfor %}
 
 
+{% comment %} 6 masala all_publisher {% endcomment %}
+{% for i in all_publisher %}
+<h1>  masala.6 == all_publisher  </h1>
+{{i.name}}
+{% endfor %}
 
 
 
